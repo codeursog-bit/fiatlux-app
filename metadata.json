@@ -1,0 +1,6 @@
+{
+  "name": "FIATLUX",
+  "description": "Plateforme de gestion de livraison urbaine rapide et fiable.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
