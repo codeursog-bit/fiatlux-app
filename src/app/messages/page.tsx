@@ -10,6 +10,14 @@ import { format } from 'date-fns';
 import { fr } from 'date-fns/locale';
 
 export default function AdminMessagesPage() {
+  return (
+    <React.Suspense fallback={null}>
+      <AdminMessagesContent />
+    </React.Suspense>
+  );
+}
+
+function AdminMessagesContent() {
   const searchParams = useSearchParams();
   const { data: conversations, isLoading: conversationsLoading } = useConversations();
   const [selectedRiderId, setSelectedRiderId] = React.useState<string | null>(null);
